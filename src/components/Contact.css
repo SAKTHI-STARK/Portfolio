@@ -1,0 +1,28 @@
+/* About.css */
+.container {
+    padding: 100px;
+    border-radius: 8px;
+    max-width: 600px;
+    text-align: left; /* Corrected from 'screenLeft' to 'left' */
+    position:absolute;
+}
+
+.header {
+    text-align: center;
+    text-decoration: underline;
+    color: #e3e0e0;
+}
+
+.section {
+    margin-top: 20px;
+}
+
+.subHeader {
+    color: #fafafa;
+}
+
+.text {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #fafafa;
+}

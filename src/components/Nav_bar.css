@@ -43,7 +43,7 @@
     border-radius: 5px;
   }
   /* Media query for mobile devices */
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 508px) {
     .navbar ul {
         flex-direction: row; /* Stack the items vertically */
         align-items: right; /* Center items horizontally */
@@ -54,6 +54,7 @@
         padding: 10px; /* Add padding for better touch targets */
         width: 100%; /* Make links full width */
         text-align: center; /* Center text */
+        font-size: small;
     }
     #name {
         display: none;

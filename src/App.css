@@ -4,7 +4,7 @@
   pointer-events: none;
   position: absolute;
   display: flex;
-  right: 0;
+  right: 30px;
   margin-top: 150px;
 
 }
@@ -27,7 +27,7 @@
 body{
   background-color: black;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 968px) {
   .App-logo{
     display: none;
   }
