@@ -1,9 +1,9 @@
-import './View_work.css'; // Import the CSS file
-
+import './View_work.css';
 const Viewwork = () => {
     return (
-        <div className="container">
-            <h1 className="header">View_work</h1>
+        <>
+         <h1 className="header">View_work</h1>
+        <div className="container_v">
             <div className="section">
                 <h2 className="subHeader">FLAMES Calculator</h2>
                 <p className="text">
@@ -19,7 +19,15 @@ const Viewwork = () => {
                 </p>
                 <img src={require('D://personal//projects//New_portfolio//my_portfolio//src//components//robot.jpg')} alt="Description" width={250} height={150}/>
             </div>
+            <div className="section">
+                <h2 className="subHeader">Bus Reservation System</h2>
+                <p className="text">
+                    <strong>Language:</strong> Python-Django
+                </p>
+                <img src={require('D://personal//projects//New_portfolio//my_portfolio//src//components//bus reservation.png')} alt="Description" width={250} height={150}/>
+            </div>
          </div>
+         </>
         
     );
 };

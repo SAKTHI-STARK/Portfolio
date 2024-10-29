@@ -1,6 +1,6 @@
 import './Nav_bar.css';
 import { Link } from 'react-router-dom';
-import {Route, Routes } from 'react-router-dom';
+import {Route, Routes} from 'react-router-dom';
 import Header from './Header';
 import About from './About';
 import Contact from './Contact';
