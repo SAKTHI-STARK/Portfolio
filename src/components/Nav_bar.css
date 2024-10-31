@@ -8,7 +8,11 @@
     padding-bottom: 4px;
     border-bottom: #50cbe6 1px solid;
   }
-  
+  .menu-toggle {
+    display: none; /* Hide the hamburger menu by default */
+   
+}
+
   .navbar li a{
     position: relative;
     text-decoration: none;
@@ -36,31 +40,42 @@
     transform: scaleX(1);
   }
   #name {
+    margin-top: 0px;
     position: absolute;
     margin-left: 4px;
     display: block;
     color: #50cbe6;
     border-radius: 5px;
   }
-  /* Media query for mobile devices */
-  @media screen and (max-width: 608px) {
+   @media (max-width: 708px) {
     .navbar ul {
-        flex-direction: row; /* Stack the items vertically */
-        align-items: right; /* Center items horizontally */
+      display: none;
+      flex-direction: column;
+      margin-right: 5px;
+      background-color:transparent;
+      border: none;
+      align-items: end;
     }
-    .navbar  li a {
-        margin-left: 0; /* Remove left margin */
-        margin-right: 0; /* Remove right margin */
-        padding: 10px; /* Add padding for better touch targets */
-        width: 100%; /* Make links full width */
-        text-align: center; /* Center text */
-        font-size: small;
-    }
-    #name {
-        display: none;
-        position: absolute; /* Change to relative for better placement */
-        margin-left: 0; /* Reset margin for mobile */
-        text-align: left; /* Center name */
+
+  /* Show the menu when toggled */
+   .navbar ul.open {
+      display: flex;
+  } 
+
+  /* Show the hamburger menu */
+   .menu-toggle {
+    background: transparent;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
+    margin-right: 0px;
       
-    }
+  } 
+
+  /* Add styles for list items in mobile view */
+  .navbar li {
+      margin: 10px 0;
   }
+} 
