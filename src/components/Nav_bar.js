@@ -12,7 +12,7 @@ const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false); // State to manage menu visibility
     const toggleMenu = () => {
         setIsOpen(!isOpen)
-        console.log(isOpen) // Toggle the menu open/close state
+        // Toggle the menu open/close state
     };
 
   return (
